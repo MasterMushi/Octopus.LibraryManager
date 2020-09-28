@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\icons\icons8-folder-48.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI.WPF" Version="11.5.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Octopus.LibraryManager.ViewModels\Octopus.LibraryManager.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="src\icons\icons8-folder-48.png" />
+  </ItemGroup>
+
+</Project>
